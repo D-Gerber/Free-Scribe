@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import HomePage from './Components/HomePage'
 import Header from './Components/Header'
 import FileDisplay from './Components/FileDisplay'
@@ -13,6 +13,10 @@ function App() {
     setFile(null)
     setAudioStream(null)
   }
+
+  useEffect(() => {
+    console.log(audioStream)
+  }, [audioStream])
 
   return (
     <div className='flex flex-col max-w-[1000px] mx-auto w-full'>
