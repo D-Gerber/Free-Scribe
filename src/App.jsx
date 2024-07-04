@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import HomePage from './Components/HomePage'
 import Header from './Components/Header'
 import FileDisplay from './Components/FileDisplay'
+import Transcribing from './Components/Transcribing'
 
 function App() {
   const [file, setFile] = useState(null)
